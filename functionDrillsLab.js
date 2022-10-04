@@ -59,10 +59,11 @@ printName()
 //CODE HERE
 
 function greeting(name) {
-  return 'Hello, ' + name
+  return `Hello, ${name}`
 }
 
-console.log(greeting('Jake'))
+let person = 'Jake'
+console.log(greeting(person))
 
 ////////////////// PROBLEM 5 ////////////////////
 
@@ -77,6 +78,19 @@ console.log(greeting('Jake'))
 
 //CODE HERE
 
+
+
+// let compareNums = (5, 7) => {
+//   if(x > y) {
+//     console.log(x)
+//   } else if (y > x) {
+//     console.log(y)
+//   } else if (x === y) {
+//     console.log(x, y)
+//   }
+// }
+
+// compareNums()
 
 ////////////////// PROBLEM 6 ////////////////////
 /*
@@ -102,7 +116,7 @@ const exclaim = function(str) {
 
 // console.log('arrow')
 // console.log('declaration')
-// console.log('expression')
+console.log('expression')
 
 
 
@@ -117,7 +131,7 @@ const exclaimTwo = str => {
   return str.toUpperCase() + '!!!'
 }
 
-// console.log('arrow')
+console.log('arrow')
 // console.log('declaration')
 // console.log('expression')
 
@@ -128,7 +142,7 @@ const exclaimTwo = str => {
   Brownie points if you use a template string
 */
 
-
+// const explainTwo = str => ({str.toUpperCase() + '!!!'})
 
 ////////////////// PROBLEM 9 ////////////////////
 
@@ -142,7 +156,7 @@ function exclaimFour(str) {
 }
 
 // console.log('arrow')
-// console.log('declaration')
+console.log('declaration')
 // console.log('expression')
 
 
@@ -156,6 +170,19 @@ function exclaimFour(str) {
 */
 
 //CODE HERE
+
+function nameCheck(name) {
+  if(name === 'Steve') {
+    console.log('Steven')
+  } else if (name === 'Bryan') {
+    console.log('Bryan')
+  } else {
+    console.log(`Cool name, ${name}`)
+  }
+}
+
+let nameGreeting = nameCheck('Austin')
+
 
 
 ////////////////// PROBLEM 11 ////////////////////
