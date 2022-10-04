@@ -377,7 +377,11 @@ let sampleArray = [0,1,2,3,4,7,5,6,8,9]
 
 //CODE HERE
 
-function 
+// function arrayCheck(arr) {
+//   if 
+// }
+
+// I could not figure out how to check whether or not the array is ascending
 
 ////////////////// PROBLEM 22 ////////////////////
 
