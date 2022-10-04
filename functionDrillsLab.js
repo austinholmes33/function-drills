@@ -222,6 +222,12 @@ let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
 
 //CODE HERE
 
+function printAllNames(names) {
+  for (i=0; i < names[i].length; i++) {
+    console.log(names[i])
+  }
+}
+printAllNames(namesArr)
 
 ////////////////// PROBLEM 13 ////////////////////
 /*
@@ -233,6 +239,14 @@ let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
 
 //CODE HERE
 
+function thatsOdd(num) {
+  if(num % 2 === 0) {
+    console.log("That's not odd!")
+  } else {
+    console.log('That is odd indeed!')
+  }
+}
+let oddChecker = thatsOdd(2)
 
 ////////////////// PROBLEM 14 ////////////////////
 
@@ -246,6 +260,7 @@ let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
 
 //CODE HERE
 
+//const bestMovie = ('No Country for Old Men') => {return `${MOVIEPARAM} is the best movie ever!'}
 
 ////////////////// PROBLEM 15 ////////////////////
 let bigOrSmallArray = [1,101, 102, 2, 103, 4, 5, 6, 107]
@@ -260,6 +275,20 @@ let bigOrSmallArray = [1,101, 102, 2, 103, 4, 5, 6, 107]
 
 //CODE HERE
 
+// function bigOrSmall(arr = bigOrSmallArray) {
+//   let arr2 = answers[]
+//   for(i=0; i < arr.length; i++) {
+//     if(arr[i] > 100) {
+//       return arr2.push('big')
+//     } else if (arr[i] <= 100) {
+//       return arr2.push('small')
+//     }
+//     return arr2 = arrayEvaluator
+//   }
+// }
+
+// bigOrSmall()
+
 
 ////////////////// PROBLEM 16 ////////////////////
 let contestants = ['Katniss', 'Peeta', 'Fox-face', 'Glimmer', 'Cato', 'Rue', 'Thresh', 'Clove', 'Marvel']
@@ -271,6 +300,9 @@ let loser = 'Glimmer'
 
 //CODE HERE
 
+function theEliminator(contestants, loser) {
+  
+}
 
 ////////////////// PROBLEM 17 ////////////////////
 let sampleString = "Hi, my name is Kylo."
@@ -281,6 +313,12 @@ let sampleString = "Hi, my name is Kylo."
 
 //CODE HERE
 
+function introduction(kylo) {
+  kylo = 'Hi, my name is Kylo.'
+  console.log(kylo.toUpperCase())
+}
+
+introduction(sampleString)
 
 ////////////////// PROBLEM 18 ////////////////////
 /*
@@ -301,7 +339,11 @@ let sampleString = "Hi, my name is Kylo."
 
 //CODE HERE
 
+// function chocoFrogs(9) {
 
+// }
+
+// let totalFrogs = chocoFrogs()
 ////////////////// PROBLEM 20 ////////////////////
 /*
   You might have noticed a slight bug in the previous problem. If you were to pass in 4 gold, the function would return to you 1.3333... However, you can't really go to a store and by 1.333 products. You would just be able to purchase 1 product. Re-write the function you used in the previous problem (give it the same name, just add a 2 to the end of it) that fixes this bug. Invoke the function and store the returned value to a variable called `totalFrogs2`.
@@ -309,6 +351,11 @@ let sampleString = "Hi, my name is Kylo."
 
 //CODE HERE
 
+// function chocoFrogs2(16) {
+    
+// }
+
+// let totalFrogs2 = chocoFrogs()
 
 ////////////////// PROBLEM 21 ////////////////////
 let sampleArray = [0,1,2,3,4,7,5,6,8,9]
@@ -318,6 +365,7 @@ let sampleArray = [0,1,2,3,4,7,5,6,8,9]
 
 //CODE HERE
 
+function 
 
 ////////////////// PROBLEM 22 ////////////////////
 
@@ -341,13 +389,13 @@ function pond() {
 */
 
 //This array should contain the variable names (as strings) accessible in the global scope.
-let globalScope = []
+let globalScope = ['duck']
 
 //This array should contain the variable names (as strings) accessible in the bathroom function.
-let bathroomScope = []
+let bathroomScope = ['squeaky']
 
 //This array should contain the variable names (as strings) accessible in the bathtub function.
-let bathtubScope = []
+let bathtubScope = ['nautical']
 
 //This array should contain the variable names (as strings) accessible in the pond function.
-let pondScope = []
+let pondScope = ['fluffy']
