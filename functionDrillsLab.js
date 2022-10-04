@@ -40,11 +40,10 @@ jsNinja()
 
 //CODE HERE
 
-function printName (Cameron) {
-    console.log('Cameron')
+function printName (name) {
 }
 
-printName()
+printName('Cameron')
 
 ////////////////// PROBLEM 4 ////////////////////
 /*
@@ -80,17 +79,17 @@ console.log(greeting(person))
 
 
 
-// let compareNums = (5, 7) => {
-//   if(x > y) {
-//     console.log(x)
-//   } else if (y > x) {
-//     console.log(y)
-//   } else if (x === y) {
-//     console.log(x, y)
-//   }
-// }
+let compareNums = (x, y) => {
+  if(x > y) {
+    console.log(x)
+  } else if (y > x) {
+    console.log(y)
+  } else if (x === y) {
+    console.log(x, y)
+  }
+}
 
-// compareNums()
+compareNums(5, 7)
 
 ////////////////// PROBLEM 6 ////////////////////
 /*
@@ -102,6 +101,12 @@ console.log(greeting(person))
 
 //CODE HERE
 
+function add(num1, num2) {
+    console.log (num1 + num2)
+}
+
+let sum = add(num1, num2)
+add(5, 7)
 
 ////////////////// PROBLEM 7 ////////////////////
 
@@ -223,7 +228,7 @@ let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
 //CODE HERE
 
 function printAllNames(names) {
-  for (i=0; i < names[i].length; i++) {
+  for (let i=0; i < names[i].length; i++) {
     console.log(names[i])
   }
 }
@@ -247,6 +252,7 @@ function thatsOdd(num) {
   }
 }
 let oddChecker = thatsOdd(2)
+console.log(oddChecker)
 
 ////////////////// PROBLEM 14 ////////////////////
 
@@ -275,19 +281,19 @@ let bigOrSmallArray = [1,101, 102, 2, 103, 4, 5, 6, 107]
 
 //CODE HERE
 
-// function bigOrSmall(arr = bigOrSmallArray) {
-//   let arr2 = answers[]
-//   for(i=0; i < arr.length; i++) {
-//     if(arr[i] > 100) {
-//       return arr2.push('big')
-//     } else if (arr[i] <= 100) {
-//       return arr2.push('small')
-//     }
-//     return arr2 = arrayEvaluator
-//   }
-// }
+function bigOrSmall(arr) {
+  let answers = []
+  for(i=0; i < arr.length; i++) {
+    if(arr[i] > 100) {
+      return answers.push('big')
+    } else if (arr[i] <= 100) {
+      return asnwers.push('small')
+    }
+    return answers = arrayEvaluator
+  }
+}
 
-// bigOrSmall()
+bigOrSmall(bigOrSmallArray)
 
 
 ////////////////// PROBLEM 16 ////////////////////
@@ -300,9 +306,15 @@ let loser = 'Glimmer'
 
 //CODE HERE
 
-function theEliminator(contestants, loser) {
-  
-}
+// function theEliminator(con, los) {
+//   for(i=0; i < ; i++) {
+//     if ()
+//   }
+// }
+
+// theEliminator(contestants, loser)
+
+// I could not quite figure this one out
 
 ////////////////// PROBLEM 17 ////////////////////
 let sampleString = "Hi, my name is Kylo."
@@ -313,9 +325,8 @@ let sampleString = "Hi, my name is Kylo."
 
 //CODE HERE
 
-function introduction(kylo) {
-  kylo = 'Hi, my name is Kylo.'
-  console.log(kylo.toUpperCase())
+function introduction(name) {
+  console.log(name.toUpperCase())
 }
 
 introduction(sampleString)
@@ -339,11 +350,12 @@ introduction(sampleString)
 
 //CODE HERE
 
-// function chocoFrogs(9) {
+function chocoFrogs(gold) {
+  
+}
 
-// }
+let totalFrogs = chocoFrogs(9)
 
-// let totalFrogs = chocoFrogs()
 ////////////////// PROBLEM 20 ////////////////////
 /*
   You might have noticed a slight bug in the previous problem. If you were to pass in 4 gold, the function would return to you 1.3333... However, you can't really go to a store and by 1.333 products. You would just be able to purchase 1 product. Re-write the function you used in the previous problem (give it the same name, just add a 2 to the end of it) that fixes this bug. Invoke the function and store the returned value to a variable called `totalFrogs2`.
@@ -351,11 +363,11 @@ introduction(sampleString)
 
 //CODE HERE
 
-// function chocoFrogs2(16) {
+function chocoFrogs2() {
     
-// }
+}
 
-// let totalFrogs2 = chocoFrogs()
+let totalFrogs2 = chocoFrogs(16)
 
 ////////////////// PROBLEM 21 ////////////////////
 let sampleArray = [0,1,2,3,4,7,5,6,8,9]
