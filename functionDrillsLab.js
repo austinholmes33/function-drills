@@ -377,9 +377,18 @@ let sampleArray = [0,1,2,3,4,7,5,6,8,9]
 
 //CODE HERE
 
-// function arrayCheck(arr) {
-//   if 
-// }
+function arrayCheck(arr) {
+  for (i=0; i < arr.length; i++) {
+    if (arr[i] >= arr[i] += arr[i]) {
+      console.log('True')
+    } else {
+      console.log('False')
+    }
+  }
+}
+
+let arrayIsAscending = arrayCheck(sampleArray)
+console.log(arrayIsAscending)
 
 // I could not figure out how to check whether or not the array is ascending
 
